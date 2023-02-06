@@ -10,9 +10,6 @@ export interface IReactImageViewStyleChangeProps {
 }
 
 export interface ImageViewConfig {
-  onLoadStart?: (url: string) => void;
-  onLoad?: (image: HTMLImageElement) => void;
-  onLoadError?: (err: any) => void;
   onStyleChange?: (opts: IReactImageViewStyleChangeProps) => void;
 }
 

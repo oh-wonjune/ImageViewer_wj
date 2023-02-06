@@ -1,4 +1,3 @@
-import ImageViewerUtil from './ViewerUtil'
 import ImageViewer from './ImageViewer/ImageViewer'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
