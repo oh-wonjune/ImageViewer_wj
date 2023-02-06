@@ -68,9 +68,15 @@ const ImageViewer = ((props: ImageViewerProps) => {
     }
 
     const onClosedDeatil=()=>{
-    
         setShow_details(false)
     }
+
+    window.addEventListener("keydown", (e) => {
+        if(e.keyCode ===27){
+            onClosedDeatil()
+        }
+
+    });
 
     return( 
         <div>

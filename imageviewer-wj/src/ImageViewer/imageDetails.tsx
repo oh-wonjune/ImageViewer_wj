@@ -68,20 +68,13 @@ const ImageDetails = ((props:ImageDetailsProps) => {
         if (!isMouseOverImage) {
             return
         }
-    
-        // if(e.ctrlKey){
-            // let center = theChart.pointToData(e.clientX, e.clientY);
-            // applyZoom(e.deltaY > 0 ? 1.1 : .9, center);
-            let img:HTMLImageElement = document.getElementById("image_"+index) as HTMLImageElement
-            if(e.deltaY >0){
-                img.style.width = img.width *1.05 +"px"
 
-                console.log("확대")
-            }else{
-                console.log("축소")
-                img.style.width = img.width *0.95 +"px"
-            }
-        // }
+        let img:HTMLImageElement = document.getElementById("image_"+index) as HTMLImageElement
+        if(e.deltaY >0){
+            img.style.width = img.width *1.05 +"px"
+        }else{
+            img.style.width = img.width *0.95 +"px"
+        }
     }
 
     return(
