@@ -2,18 +2,8 @@ import React, { useEffect, useState } from "react";
 import {SwipeLButton,SwipeRButton,Container,ImageList,Image} from '../styled/imageViewerStyled'
 import ImageDetails from "./imageDetails";
 
-export interface IReactImageViewStyleChangeProps {
-  scale?: number;
-  translateX?: number;
-  translateY?: number;
-  rotateZ?: number;
-}
 
-export interface ImageViewConfig {
-  onStyleChange?: (opts: IReactImageViewStyleChangeProps) => void;
-}
-
-export interface ImageViewerProps extends ImageViewConfig {
+export interface ImageViewerProps {
   url?: string | string[];
 }
 
