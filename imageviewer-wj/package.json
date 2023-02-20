@@ -1,7 +1,7 @@
 {
-  "name": "imageviewer-wj",
-  "version": "0.1.0",
-  "private": true,
+  "name": "typescript-imageviewer",
+  "version": "0.1.9",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -12,9 +12,9 @@
     "@types/react-dom": "18.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-image-viewers": "1.0.6",
     "react-scripts": "5.0.1",
     "styled-components": "5.3.6",
+    "@types/styled-components": "5.1.26",
     "typescript": "4.9.4",
     "web-vitals": "2.1.4"
   },
@@ -30,20 +30,30 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "@types/styled-components": "5.1.26",
-    "eslint-plugin-react-hooks": "4.6.0"
-  }
+    "eslint-plugin-react-hooks": "4.6.0",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.1"
+  },
+  "description": "ImageViewer component",
+  "main": "src/ImageViewer/ImageViewer.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oh-wonjune/ImageViewer_wj.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "ohwonjune <kbw0309@naver.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oh-wonjune/ImageViewer_wj/issues"
+  },
+  "homepage": "https://github.com/oh-wonjune/ImageViewer_wj#readme"
 }
